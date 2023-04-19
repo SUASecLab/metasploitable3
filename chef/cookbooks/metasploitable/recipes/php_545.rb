@@ -30,7 +30,7 @@ remote_file "#{Chef::Config[:file_cache_path]}/#{php_tar}" do
 end
 
 remote_file "#{Chef::Config[:file_cache_path]}/libxml29_compat.patch" do
-  source "https://mail.gnome.org/archives/xml/2012-August/txtbgxGXAvz4N.txt"
+  source "https://gist.githubusercontent.com/ttefke/66a0284bf43eefb8b3b6cebee127345e/raw/c1f63852c7ca1a76a912a20e54e080b4ee1c5e9e/libxml29_compat.patch"
   mode '0644'
   action :create_if_missing
   not_if 'apache2ctl -M | grep -q php5'
