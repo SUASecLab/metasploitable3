@@ -177,6 +177,7 @@
         "metasploitable::knockd",
         "metasploitable::iptables",
         "metasploitable::flags",
+        "metasploitable::juiceshop",
         "metasploitable::ifnames"
       ]
     }
